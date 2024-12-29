@@ -1,0 +1,92 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-family: GothicA1;
+    -webkit-user-select: none;
+    -moz-user-select: moz-none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+body {
+    text-align: center;
+    background-color: black;
+}
+
+
+@media (min-width: 992px) {
+    #poster {
+        margin-left: auto; margin-right: auto; margin-top: 70px; margin-bottom: 0px;
+        width: 80vw;
+        max-width: 1800px;
+        overflow: hidden;
+    }
+
+    #caption {
+        position: fixed;
+        z-index: 20;
+        left: 50%; top: 2450px;
+        transform: translate(-50%, 0);
+        width: 80vw;
+        color: rgb(255, 222, 73);
+        text-shadow: -3px 0px black, 0px 3px black, 3px 0px black, 0px -3px black;
+        font-family: '굴림', Courier, monospace;
+        font-size: 110px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    #poster {
+        margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 0px;
+        width: 80vw;
+        max-width: 1800px;
+        overflow: hidden;
+    }
+
+    #caption {
+        position: fixed;
+        z-index: 20;
+        left: 50%; top: 550px;
+        transform: translate(-50%, 0);
+        width: 80vw;
+        color: rgb(255, 222, 73);
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        font-family: '굴림', Courier, monospace;
+        font-size: 20px;
+    }
+  }
+
+
+.poster_1 {
+    content: url("resources/2024\ 곰영\ 합작\ 1.png");
+}
+
+.poster_1_g {
+    transition: all 0.5s ease-in;
+    transform: scaleY(0.98) rotate(2deg);
+    content: url("resources/2024\ 곰영\ 합작\ 1_구김.png");
+}
+
+.poster_2 {
+    content: url("resources/2024\ 곰영\ 합작\ 2.png");
+}
+
+.poster_2_g {
+    transition: all 0.5s ease-in;
+    transform: scaleY(0.98) rotate(2deg);
+    content: url("resources/2024\ 곰영\ 합작\ 2_구김.png");
+}
+
+.poster_3 {
+    content: url("resources/2024\ 곰영\ 합작\ 3.png");
+}
+
+.poster_3_g {
+    transition: all 0.5s ease-in;
+    transform: scaleY(0.98) rotate(2deg);
+    content: url("resources/2024\ 곰영\ 합작\ 3_구김.png");
+}
