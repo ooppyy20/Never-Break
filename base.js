@@ -44,8 +44,16 @@ $(document).ready(function(){
         $("#poster").removeClass("poster_" + poster_idx);
         $("#poster").addClass("poster_" + poster_idx + "_g");
     });
+    $("#poster").mousedown(function(m){
+        $("#poster").removeClass("poster_" + poster_idx);
+        $("#poster").addClass("poster_" + poster_idx + "_g");
+    });
 
     $("#poster").on("mouseleave", function(){
+        $("#poster").removeClass("poster_" + poster_idx + "_g");
+        $("#poster").addClass("poster_" + poster_idx);
+    });
+    $("#poster").mouseup(function(){
         $("#poster").removeClass("poster_" + poster_idx + "_g");
         $("#poster").addClass("poster_" + poster_idx);
     });
